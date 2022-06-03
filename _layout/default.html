@@ -9,7 +9,10 @@
 
   {{ content }}
   
+<!-- cookie_consent intégration end of page html before body -->  
+  
 {% if site.cookie == "enabled" %}
+{% include cookie_consent %}
 <script src="{{ site.baseurl }}/assets/js/script.js"></script>
 {% endif %}
 </body>
